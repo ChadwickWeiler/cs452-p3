@@ -150,8 +150,8 @@ void *parallel_mergesort(void *args) {
     parallel_mergesort(&right); 
   }
 
+
   if (left.tid > 1) {pthread_join(left_t, NULL);}
-  pthread_cond_wait
   if (right.tid > 1) {pthread_join(right_t, NULL);}
 
   merge_s(p->A, start, center, end);
