@@ -106,10 +106,10 @@ void mergesort_mt(int *A, int n, int num_thread) {
   if (num_thread > 1) {
     struct parallel_args arg = {A, 0, n - 1, num_thread};
 
-    pthread_t new_thread;
+    pthread_t mt;
 
-    pthread_create(&new_thread, NULL, parallel_mergesort, &arg);
-    pthread_join(new_thread, NULL);
+    pthread_create(&mt, NULL, parallel_mergesort, &arg);
+    pthread_join(mt, NULL);  
   } 
 
   //single thread case:
