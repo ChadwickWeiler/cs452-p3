@@ -17,4 +17,5 @@
 5. What was the slowest number of threads for your machine?
     Funny enough, 2 threads was the slowest, and I believe its because trying to split it up and relying only on 2 threads to attack the problem with the creation and joining, was actually harmful instead of helpful. As more threads were added, more bandwith was provided and it was easier for the system to handle multiple tasks at once. 
 
+![image](https://github.com/user-attachments/assets/56fce162-d50e-45b9-aa9e-0950e7643a8a)
     
